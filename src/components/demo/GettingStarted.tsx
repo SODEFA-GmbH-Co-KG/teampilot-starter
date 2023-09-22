@@ -28,9 +28,9 @@ export const GettingStarted = async () => {
           <CardTitle>Getting Started</CardTitle>
           <CardDescription>Lets check your setup</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="overflow-hidden flex flex-col">
           <div className="italic">{result.message.content}</div>
-          <Link href={result.chatroom.url} className="text-primary">
+          <Link href={result.chatroom.url} className="text-primary truncate">
             {result.chatroom.url}
           </Link>
         </CardContent>

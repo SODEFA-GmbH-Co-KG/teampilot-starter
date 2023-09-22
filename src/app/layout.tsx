@@ -1,5 +1,4 @@
 import { MainTop } from '@/components/layout/MainTop'
-import { SuspenseLoader } from '@/components/layout/SuspenseLoader'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -16,12 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-background">
+      <body className="bg-background min-h-[100svh] flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <MainTop />
           <hr />
-          <div className="container flex flex-col gap-8 py-8">
-            <SuspenseLoader>{children}</SuspenseLoader>
+          <div className="container flex flex-col gap-8 py-8 flex-1">
+            {children}
           </div>
         </ThemeProvider>
       </body>
