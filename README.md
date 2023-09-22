@@ -11,3 +11,4 @@ pnpm dev
 - [Tailwind CSS](https://tailwindcss.com/)
 - [pnpm](https://pnpm.io/)
 - [shadcn/ui](https://ui.shadcn.com/)
+- [@teampilot/sdk](https://sdk.teampilot.ai/)
